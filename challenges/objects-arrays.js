@@ -84,10 +84,10 @@ graduates.map(function(graduates){
 })
 console.log(universities);
 
-for (let i=0; i < graduates.length; i++) {
-  universities[i] = graduates[i].university;
-}
-console.log(universities.sort());
+// for (let i=0; i < graduates.length; i++) {
+//   universities[i] = graduates[i].university;
+// }
+// console.log(universities.sort());
 
 
 
