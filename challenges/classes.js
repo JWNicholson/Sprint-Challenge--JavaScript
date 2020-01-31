@@ -36,11 +36,6 @@ class CuboidMaker {
     'height': 5,
   });
   
-  const cube = new CubeMaker({
-    'length': 3,
-    'width': 6,
-    'height': 2,
-  });
   
 
 //Test your volume and surfaceArea methods by uncommenting the logs below:
