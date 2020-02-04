@@ -12,7 +12,12 @@ let obj1 = {
 	diet:"carnivorous",
   weight:"7000kg",
   length: "12m",
-	period:"Late Cretaceous"  
+  period:"Late Cretaceous" ,
+  roar:  function()
+  {
+  return "RAWERSRARARWERSARARARRRR!";
+  }
+  
 }
 
 // stegosaurus, herbivorous, 2000kg, 9m, Late Jurassic
@@ -49,11 +54,8 @@ console.log(obj1.period);
 
 
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
-let dinoSpeak= function()
-{
-return "RAWERSRARARWERSARARARRRR!";
-}
-console.log(dinoSpeak());
+
+console.log(obj1.roar());
 
 
 // ==== Arrays ====
@@ -105,21 +107,28 @@ for (i = 0; i < graduates.length; i++) {
 }
 
 console.log(contactInfo);
-
+//console.log(contactInfo.length);
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called unisWithUni that contains them all. This will be an array of objects. Log the result. */
-const uni = [];
+// const uni = [];
 
-for (i = 0; i < graduates.length; i++) {
-  graduates[i].university;
-  if (graduates[i].university.includes("Uni")){
-    uni.push(graduates[i].university);
-  }
+// for (i = 0; i < graduates.length; i++) {
+//   graduates[i].university;
+//   if (graduates[i].university.includes("Uni")){
+//     uni.push(graduates[i].university);
+//   }
     
-}
-console.log(uni);
+// }
+// console.log(uni);
 
+const unisWithUni = [];
+graduates.map(el => {
+  if(el.university.includes("Uni")){
+    unisWithUni.push(el.university);
+  }
+});
 
+console.log(unisWithUni);
 
 
 // ==== ADVANCED Array Methods ====
